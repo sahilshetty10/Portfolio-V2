@@ -13,7 +13,6 @@ import Contact from "./components/homepage/Contact";
 import Footer from "./components/ui/Footer";
 
 const App = () => {
- 
   gsap.registerPlugin(ScrollTrigger);
 
   const sectionRefs = useRef([]); // Creating a sectionRefs array
@@ -37,14 +36,11 @@ const App = () => {
             duration: 1,
           }),
           toggleActions: "play none none none",
-
         });
-        ScrollTrigger.refresh()
+        ScrollTrigger.refresh();
       });
     });
   }, []);
-
-  
 
   return (
     <div className="bg-secondary-100">
