@@ -18,7 +18,7 @@
     z-index: 10000;
     pointer-events: none;
     background-blend-mode: overlay;
-    opacity: 0.5;
+    opacity: 0.3;
   }
 
   ::-moz-selection {
