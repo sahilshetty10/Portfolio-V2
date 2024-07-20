@@ -6,7 +6,9 @@
   /* *{
     border: 1px solid red;
   } */
-
+  body {
+    box-sizing: border-box;
+  }
   body::after {
     content: "";
     background-image: url("/src/assets/images/noise.png");
