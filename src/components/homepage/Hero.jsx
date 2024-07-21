@@ -41,8 +41,8 @@ export default function Hero() {
       className="hero relative flex h-screen w-full select-none items-center justify-center"
       aria-label="hero"
     >
-      <div className="z-10 flex w-full  flex-col items-center text-title font-bold uppercase text-accent-300  2xl:space-y-16 2xl:text-[10vw]">
-        <div className="title 2xl:py-20">
+      <div className="z-10 flex w-full  flex-col items-center text-title font-bold uppercase text-accent-300 2xl:h-full 2xl:justify-evenly 2xl:text-[10vw]">
+        <div className="title 2xl:py-16">
           {/* Learn more about useRef */}
           <h1
             ref={(el) => (titles.current[0] = el)}
