@@ -3,11 +3,11 @@ import Heading from "../ui/Heading";
 
 export default function Services() {
   const expertiseItems = [
-    "Web Development",
+    "Frontend Development",
+    "Backend Development",
+    "UI/UX Design",
     "Web Design",
     "Wireframing",
-    "UI/UX Design",
-    "Branding",
   ];
 
   const toolBoxItems = [
