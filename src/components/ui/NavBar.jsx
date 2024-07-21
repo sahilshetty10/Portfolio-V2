@@ -33,7 +33,7 @@ export default function NavBar({ sectionRefs }) {
     sectionRefs.forEach((section) => {
       ScrollTrigger.create({
         trigger: section,
-        start: "top middle",
+        start: "top 70%",
         end: "bottom 300px",
         // markers: true,
         animation: gsap
