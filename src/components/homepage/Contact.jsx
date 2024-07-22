@@ -211,6 +211,22 @@ export default function Contact() {
           </div>
           <div className="space-y-3 ">
             <h4 className="text-body-1 font-semibold 2xl:text-4xl">
+              My Resume
+            </h4>
+            <div className="flex flex-col space-y-3 text-body-2 2xl:text-3xl">
+              <a
+                href="/resume.pdf"
+                className="group relative w-fit cursor-pointer"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>Download</span>
+                <span className="absolute bottom-0 left-0 h-[0.12em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
+              </a>
+            </div>
+          </div>
+          <div className="space-y-3 ">
+            <h4 className="text-body-1 font-semibold 2xl:text-4xl">
               My Digital Spaces
             </h4>
             <div className="space-y-3 text-body-2 2xl:text-3xl">
