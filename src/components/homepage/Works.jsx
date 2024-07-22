@@ -20,7 +20,7 @@ export default function Works({ forwardedRef }) {
         <div className=" col-span-1 md:col-span-12">
           <Projects
             link="https://movie.sahilshetty.com/"
-            vid={"movieapp"}
+            vid={movieapp}
             name="Movie App"
             type="FullStack Development"
             year="2023"
