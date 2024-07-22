@@ -1,3 +1,6 @@
+import { useState } from "react";
+import Loading from "./Loading";
+
 export default function Projects({
   name,
   vid,
@@ -8,6 +11,10 @@ export default function Projects({
   year,
   tools,
 }) {
+  const [isLoading, setIsLoading] = useState(true);
+  const handleLoad = () => {
+    setIsLoading(false);
+  };
   const mediaComponet = vid ? (
     <video
       className="w-screen duration-700 ease-in-out group-hover:scale-105"
@@ -16,6 +23,7 @@ export default function Projects({
       loop
       muted
       playsInline
+      onLoadedData={handleLoad}
     ></video>
   ) : (
     <img
@@ -24,10 +32,13 @@ export default function Projects({
       alt={alt}
       width="800"
       height="600"
+      onLoadedData={handleLoad}
     />
   );
+
   return (
     <div>
+      {isLoading && <Loading />}
       {link ? (
         <a
           target="_blank"
