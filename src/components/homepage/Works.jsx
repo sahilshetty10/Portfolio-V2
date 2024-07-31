@@ -40,6 +40,7 @@ export default function Works({ forwardedRef }) {
         </div>
         <div className="col-span-1 pt-0 md:col-span-5 md:pt-80">
           <Projects
+            link={"https://github.com/sahilshetty10/Personal-Dashboard"}
             vid={dashboardzen}
             name="Dashboard Zen"
             type="FullStack Development"
